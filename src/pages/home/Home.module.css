@@ -1,0 +1,11 @@
+.container {
+  background-color: var(--background);
+  color: var(--text);
+  display: flex;
+  height: calc(100vh - 4rem);
+  overflow: hidden;
+}
+
+.container h1 {
+  margin: 0;
+}

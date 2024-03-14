@@ -1,8 +1,19 @@
+import { Link } from 'react-router-dom';
+import styles from './Navbar.module.css';
+
 const Navbar = () => {
   return (
-    <nav>
-      <p>Hello</p>
-    </nav>
+    <div>
+      <nav className={styles.container}>
+        <Link to='/'>
+          <h2>Pomodoro</h2>
+        </Link>
+        <div className={styles.btnGroup}>
+          <Link>Settings</Link>
+          <Link to='/login'>Login</Link>
+        </div>
+      </nav>
+    </div>
   );
 };
 
